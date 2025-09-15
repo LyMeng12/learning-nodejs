@@ -2,21 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/output.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="shortcut icon" href="../../image/f0e047061aefc9d03aeb32fd70a93544.gif" type="image/x-icon">
-    <title>Sheep-Tea</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/output.css">
+    <title>Document</title>
 </head>
 <body>
+
     <!-- header -->
     <header class="bg-green-600 w-full z-100 h-auto shadow-2xl top-0 sticky">
         <!-- top  -->
         <div class="flex justify-between gap-5 lg:px-20 px- py-2 items-center">
             <!-- logo and search -->
             <div class="w-1/3 flex justify-center">
-            <a href="../../../index.html" class=" justify-center items-center hidden lg:flex">
-                <img class=""  src="../../image/f0e047061aefc9d03aeb32fd70a93544.gif" width="70px" alt="">
+            <a href="../../index.html" class=" justify-center items-center hidden lg:flex">
+                <img class=""  src="../image/f0e047061aefc9d03aeb32fd70a93544.gif" width="70px" alt="">
                 <h1 class="text-2xl font-bold text-yellow-500">Sheep <span class="text-green-800">Tea</span></h1>
             </a>
                  <div class="lg:hidden flex e font-bold text-3xl">🔍</div>
@@ -25,41 +25,47 @@
             <div class="w-1/3 relative flex justify-center items-center">
                 <input class="hidden lg:flex w-full px-8 py-3 rounded-2xl bg-white " type="text" name="name" id="name" placeholder="Search....">
                 <div class="hidden lg:flex absolute font-bold top-3 left-2">🔍</div>
-                <a href="../../../index.html" class=" justify-center items-center lg:hidden flex">
-                    <img class=""  src="../../image/f0e047061aefc9d03aeb32fd70a93544.gif" width="90px" alt="">
+                <a href="../../index.html" class=" justify-center items-center lg:hidden flex">
+                    <img class=""  src="../image/f0e047061aefc9d03aeb32fd70a93544.gif" width="90px" alt="">
                     <h1 class="text-2xl font-bold text-yellow-500">Sheep <span class="text-green-800">Tea</span></h1>
                 </a>
             </div>
             <!-- icon and link -->
             <ul class="w-1/3  flex justify-center items-center gap-5 lg:gap-10 font-bold text-xl text-white">
-                <li><a href="../../../index.html" class="lg:flex hidden hover:text-amber-500">🏠Home</a></li>
+                <li><a href="../../index.html" class="lg:flex hidden hover:text-amber-500">🏠Home</a></li>
                 <li class="group relative lg:flex hidden hover:text-amber-500 transition-all duration-300 ease-in-out">🍷Drink
                     <ul class="group-hover:flex transition-all duration-300 ease-in-out  absolute w-[200%] text-xl px-5 py-3 top-7 font-black rounded-2xl bg-amber-300 flex-col gap-2 hidden">
-                        <li><a href="./milktea.html" class="hover:text-amber-800 ">🧋Milk Tea</a></li>
-                        <li><a href="./coffe.html" class=" hover:text-amber-950">☕Coffe</a></li>
+                        <li><a href="../Componnet/category/milktea.html" class="hover:text-amber-800 ">🧋Milk Tea</a></li>
+                        <li><a href="../Componnet/category/coffe.html" class=" hover:text-amber-950">☕Coffe</a></li>
                     </ul>
                 </li>
-                <li><a href="../../Anim/anim.html" class="lg:flex hidden hover:text-amber-500">👤Log in</a></li>
+                <li><a href="./anim.html" class="lg:flex hidden hover:text-amber-500">👤Log in</a></li>
                 <li class="flex lg:hidden"><a href="">👤</a></li>
                 <li class="flex lg:hidden"><a href="">🛒</a></li>
-                <li class=""><a href="../../Anim/cart.html" class="lg:flex hidden hover:text-amber-500">🛒Cart</a></li>
+                <li class=""><a href="./cart.html" class="lg:flex hidden hover:text-amber-500">🛒Cart</a></li>
             </ul>
         </div>
 
 
     </header>
 
-    <!-- navigasion -->
-    <nav class="w-full h-auto">
-        <div class="w-full flex justify-center items-center bg-amber-900">
-            <img src="../../image/banner.jpg" alt="">
+    <!-- list cart -->
+    <h1 class="text-3xl font-bold text-center py-3 text-white bg-amber-700">🧾Receipt</h1>
+    <div class="w-full h-auto flex justify-center bg-amber-800">
+        <div class="w-[70%] h-auto flex bg-amber-100 justify-around px-10 py-5 flex-col items-center">
+            <!-- list cart -->
+            <div class="w-full flex bg-amber-500 justify-between items-center">
+                <!-- img-item -->
+                <div class="w-[10%] bg-amber-500">
+                    <img class="w-full h-full" src="../image/milk-tea/Caramel Milk Tea.jpg" alt="">
+                </div>
+                <!-- text-item -->
+                <div>
+                    <h1>Name</h1>
+                    <h1>desirp</h1>
+                </div>
+            </div>
         </div>
-    </nav>
-
-    <!-- Cart Product -->
-    <h1 class="text-center text-4xl py-4 bg-green-600 font-bold text-white">☕Coffe</h1>
-    <div id="coffe-Item" class="w-full bg-amber-900 px-20 py-5 gap-5 flex flex-wrap grid-cols-4  ">
-         
     </div>
 
     <!-- footer -->
@@ -112,6 +118,6 @@
             <h1 class="text-sm text-white text-center">© 2020 Copyright: MDBootstrap.com</h1>
         </div>
     </div>
-    <script type="module" src="./coffe.js"></script>
+    
 </body>
 </html>
