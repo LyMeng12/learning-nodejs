@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../../../css/output.css">
+    <link rel="shortcut icon" href="../../../image/f0e047061aefc9d03aeb32fd70a93544.gif" type="image/x-icon">
+    <title>Sheep Tea</title>
+</head>
+<body class="bg-amber-900">
+    <!-- header -->
+    <header class="bg-green-600 w-full z-100 h-auto shadow-2xl top-0 sticky">
+        <!-- top  -->
+        <div class="flex justify-between gap-5 lg:px-20 px- py-2 items-center">
+            <!-- logo and search -->
+            <div class="w-1/3 flex justify-center">
+            <a href="../../../../index.html" class=" justify-center items-center hidden lg:flex">
+                <img class=""  src="../../../image/f0e047061aefc9d03aeb32fd70a93544.gif" width="70px" alt="">
+                <h1 class="text-2xl font-bold text-yellow-500">Sheep <span class="text-green-800">Tea</span></h1>
+            </a>
+                 <div class="lg:hidden flex e font-bold text-3xl">🔍</div>
+            </div>
+            <!-- search and hidden logo -->
+            <div class="w-1/3 relative flex justify-center items-center">
+                <input class="hidden lg:flex w-full px-8 py-3 rounded-2xl bg-white " type="text" name="name" id="name" placeholder="Search....">
+                <div class="hidden lg:flex absolute font-bold top-3 left-2">🔍</div>
+                <a href="../../../../index.html" class=" justify-center items-center lg:hidden flex">
+                    <img class=""  src="../../../image/f0e047061aefc9d03aeb32fd70a93544.gif" width="90px" alt="">
+                    <h1 class="text-2xl font-bold text-yellow-500">Sheep <span class="text-green-800">Tea</span></h1>
+                </a>
+            </div>
+            <!-- icon and link -->
+            <ul class="w-1/3  flex justify-center items-center gap-5 lg:gap-10 font-bold text-xl text-white">
+                <li><a href="../../../../index.html" class="lg:flex hidden hover:text-amber-500">🏠Home</a></li>
+                <li class="group relative lg:flex hidden hover:text-amber-500 transition-all duration-300 ease-in-out">🍷Drink
+                    <ul class="group-hover:flex transition-all duration-300 ease-in-out  absolute w-[200%] text-xl px-5 py-3 top-7 font-black rounded-2xl bg-amber-300 flex-col gap-2 hidden">
+                        <li><a href="../../../Componnet/category/milktea.html" class="hover:text-amber-800 ">🧋Milk Tea</a></li>
+                        <li><a href="../../../Componnet/category/coffe.html" class=" hover:text-amber-950">☕Coffe</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../../Anim/anim.html" class="lg:flex hidden hover:text-amber-500">👤Log in</a></li>
+                <li class="flex lg:hidden"><a href="">👤</a></li>
+                <li class="flex lg:hidden"><a href="">🛒</a></li>
+                <li class=""><a href="../../../Anim/cart.html" class="lg:flex hidden hover:text-amber-500">🛒Cart</a></li>
+            </ul>
+        </div>
+
+
+    </header>
+
+    <!-- detail -->
+    <div class="max-w-3xl mx-auto bg-amber-50 rounded-2xl shadow-lg overflow-hidden mt-10">
+        <!-- Image -->
+        <div class="w-full h-[750px]">
+            <img src="../../../image/coffee/Iced Coffee.jpg" 
+                alt="Taro Milk Tea" 
+                class="w-full h-full object-cover">
+        </div>
+
+        <!-- Product Info -->
+        <div class="p-6 flex flex-col gap-4">
+            <h1 class="text-3xl font-bold text-gray-800">Iced Coffee</h1>
+            <p class="text-gray-600 text-base leading-relaxed">
+                Iced Coffee is a chilled coffee beverage made by brewing coffee and then cooling it over ice. It has a refreshing taste and can be sweetened or served with milk for a smooth, balanced flavor.
+            </p>
+            <p class="text-gray-600 text-base leading-relaxed">
+                Perfect for hot days or a refreshing pick-me-up, Iced Coffee can be customized with flavors like vanilla, caramel, or chocolate. Its crisp and invigorating profile makes it a favorite for coffee lovers everywhere.
+            </p>
+
+            <!-- Row with price & available -->
+            <div class="flex items-center justify-between mt-2">
+                <span class="text-2xl font-semibold text-green-600">$2.80</span>
+                <span class="text-sm text-gray-500">Available: 20</span>
+            </div>
+
+            <!-- Add to Cart -->
+            <button id="add-btn" class=" mt-4 w-full bg-green-600 text-white py-3 rounded-xl hover:bg-green-800 transition">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="w-full h-auto flex flex-col bg-amber-950 text-white">
+        <!-- top -->
+        <div class="w-full  flex max-sm:flex-col justify-center items-center gap-1 py-5 px-5 ">
+            <div class="w-full lg:w-1/3 h-auto lg:border-b-0 lg:py-0  border-b-2 py-2  ">
+                <h1 class="text-5xl font-bold text-amber-600">Sheep <span class="text-green-700">Tea</span></h1>
+                <h1 class="mt-5">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.</h1>
+                <h1 class="mt-5">Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias</h1>
+                <div class="flex items-center mt-5 gap-3 text-4xl">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-messenger"></i>
+                    <i class="bi bi-tiktok"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-telegram"></i>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/3 h-auto lg:border-b-0 lg:py-0  border-b-2 py-2 px-3 ">
+                <h1 class="text-4xl font-bold ">SEARCH SOMETHING</h1>
+                <input type="text" name="" id="" placeholder="Search" class="w-full border px-5 py-4 mt-5">
+                <h1 class="text-2xl mt-5"><i class="bi bi-house-door-fill"> Warsaw, 00-967, Poland</i></h1>
+                <h1 class="text-2xl mt-5"><i class="bi bi-envelope"></i> Sao LyMeng@gmail.com</i></h1>
+                <h1 class="text-2xl mt-5"><i class="bi bi-telephone-fill"></i> +885 069 607 541</i></h1>
+            </div>
+            <div class="w-full lg:w-1/3 h-auto lg:border-b-0 lg:py-0  py-2  ">
+                <h1 class="text-4xl font-bold text-center ">OPENING HOURS</h1>
+                <div class="border-b-2 mt-15 border-white py-2 flex justify-between items-center">
+                    <div class="flex justify-between items-center w-full px-10">
+                        <h1>Mon-Thu</h1>
+                        <h1>8am - 9pm</h1>
+                    </div>
+                </div>  
+                <div class="border-b-2 mt-5 border-white py-2 flex justify-between items-center">
+                    <div class="flex justify-between items-center w-full px-10">
+                        <h1>Mon-Thu</h1>
+                        <h1>8am - 9pm</h1>
+                    </div>
+                </div>  
+                <div class="border-b-2 mt-5 border-white py-2 flex justify-between items-center">
+                    <div class="flex justify-between items-center w-full px-10">
+                        <h1>Mon-Thu</h1>
+                        <h1>8am - 9pm</h1>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <!-- boottom -->
+        <div class="w-full bg-amber-900 py-2">
+            <h1 class="text-sm text-white text-center">© 2020 Copyright: MDBootstrap.com</h1>
+        </div>
+    </div>
+    
+    
+    <script type="module" src="./system/IcedCoffee.js"></script>
+
+</body>
+</html>

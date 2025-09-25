@@ -1,39 +1,56 @@
-import { newItem, Products, banner } from './data.js';
+import { newItem, banner } from './data.js';
+
+// export const cartLists=[];
 
 
+const NewItem = document.getElementById("new-Item");
 
 
-// new Products
-const NewItem =document.getElementById("new-Item");
-newItem.map((n)=>{
-    NewItem.innerHTML+=
+newItem.map((p)=>{
+    const itemcart = document.createElement("div");
+     itemcart.classList.add(
+    "w-[30%]",
+    "bg-amber-50",
+    "h-[400px]",
+    "rounded-2xl",
+    "flex",
+    "flex-col",
+    "overflow-hidden",
+    "shadow-md",
+    "hover:shadow-lg",
+    "transition"
+  );
+    itemcart.innerHTML+=
     `
-        <div class="max-w-md mx-auto  w-[30%] bg-white rounded-2xl shadow-lg overflow-hidden flex p-4 mb-4 hover:shadow-xl transition-shadow duration-300">
-            <!-- Product Image -->
-            <div class="w-24 h-24 flex-shrink-0 rounded-xl overflow-hidden">
-                <img src="${n.img}" alt="Classic Milk Tea" class="w-full h-full object-cover">
-            </div>
+  <!-- Image -->
+  <a href="./src/Componnet/product-detaill/milktea${p.link}" class="w-full h-[65%] block">
+    <img class="rounded-t-2xl w-full h-full object-cover" src="./src/${p.img}" alt="${p.name}">
+  </a>
 
-        <!-- Product Details -->
-            <div class="ml-4 flex-1 flex flex-col justify-between">
-                <div>
-                    <h3 class="text-lg font-semibold text-gray-800">${n.name}</h3>
-                    <p class="text-sm text-gray-500 mt-1">${n.description}</p>
-                </div>
+  <!-- Text & Button -->
+  <div class="w-full relative h-[35%] font-bold px-5 py-5 flex flex-col justify-between">
+    <div>
+      <h2 class="text-lg text-gray-800">${p.name}</h2>
+      <p class="text-sm text-gray-600">${p.description}</p>
+      <div class="text-xl text-green-600 mt-2">$${p.price.toFixed(2)}</div>
+    </div>
+    
+    <button 
+      class="absolute right-5 bottom-5 transition-all duration-300 ease-in-out rounded-2xl text-white font-light hover:bg-green-900 px-5 py-3 bg-green-600"
+      onclick="addToCart(${p.id})"><a href="./src/Componnet/product-detaill/milktea${p.link}">
+      Add Cart
+    </a></button>
+  </div>
 
-        <!-- Quantity and Price -->
-                <div class="flex items-center justify-between mt-3">
-                    <button class="text-lg bg-green-700 text-white font-bold px-5 rounded-sm hover:bg-amber-500 hover:text-green-700 transition-all ease-in-out duration-300">Buy</button>
-                    <div class="text-lg font-bold text-gray-900">${n.price}$</div>
-                </div>
-            </div>
-        </div>
+
     `;
-});
+  NewItem.appendChild(itemcart)
+})
 
 
 
-// map category
+
+
 const bannerCart = document.getElementById("banner-cart");
 banner.map((bannerItem)=>{
     bannerCart.innerHTML+=

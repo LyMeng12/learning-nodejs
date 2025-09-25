@@ -5,7 +5,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/output.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="../image/f0e047061aefc9d03aeb32fd70a93544.gif" type="image/x-icon">
+    <title>Sheep Tea</title>
 </head>
 <body>
 
@@ -48,25 +49,23 @@
 
 
     </header>
+    
+    <!-- navigasion -->
+    <nav class="w-full h-auto">
+        <div class="w-full flex justify-center items-center bg-amber-900">
+            <img src="../image/banner.jpg" alt="">
+        </div>
+    </nav>
 
     <!-- list cart -->
-    <h1 class="text-3xl font-bold text-center py-3 text-white bg-amber-700">🧾Receipt</h1>
-    <div class="w-full h-auto flex justify-center bg-amber-800">
-        <div class="w-[70%] h-auto flex bg-amber-100 justify-around px-10 py-5 flex-col items-center">
+     <h1 class="text-3xl font-bold text-center py-3 text-white bg-amber-700">🧾Receipt</h1>
+    <div class="w-full flex-col items-center h-auto py-3 flex justify-center bg-amber-800">
+        <div id="cart-items" class="w-[70%] h-auto rounded-2xl flex bg-white justify-around px-10 py-5 flex-col items-center">
             <!-- list cart -->
-            <div class="w-full flex bg-amber-500 justify-between items-center">
-                <!-- img-item -->
-                <div class="w-[10%] bg-amber-500">
-                    <img class="w-full h-full" src="../image/milk-tea/Caramel Milk Tea.jpg" alt="">
-                </div>
-                <!-- text-item -->
-                <div>
-                    <h1>Name</h1>
-                    <h1>desirp</h1>
-                </div>
-            </div>
         </div>
+        <button id="Payment-btn" class="px-10 py-3 text-white font-bold rounded-2xl mt-5 bg-green-600 hover:bg-green-800 transition-all duration-300 ease-in-out">Payment</button>
     </div>
+
 
     <!-- footer -->
     <div class="w-full h-auto flex flex-col bg-amber-950 text-white">
@@ -118,6 +117,6 @@
             <h1 class="text-sm text-white text-center">© 2020 Copyright: MDBootstrap.com</h1>
         </div>
     </div>
-    
+    <script type="module" src="./cart.js"></script>
 </body>
 </html>
